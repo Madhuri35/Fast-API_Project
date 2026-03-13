@@ -1,0 +1,6 @@
+from sqlalchemy import createEngine
+from sqlalchemy.orm import sessionmaker
+
+DATABASE_URL:"sqlite: ///.testdb/"
+Engine= createEngine(DATABASE_URL)
+session= sessionmaker(bind=Engine)
